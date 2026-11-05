@@ -1,1 +1,18 @@
+# secrets
+.env
+*.key
+secrets*
+config_local*
 
+# raw / sensitive data
+data/
+*.csv
+raw_diaries*
+*rosters*
+
+# python junk
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+venv/
+.venv/
