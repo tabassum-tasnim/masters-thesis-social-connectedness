@@ -1,18 +1,64 @@
-# secrets
-.env
-*.key
-secrets*
-config_local*
-
-# raw / sensitive data
+# ─────────────────────────────────────────────────────────────
+# SENSITIVE DATA — never commit. Block the whole data folder.
+# ─────────────────────────────────────────────────────────────
 data/
-*.csv
-raw_diaries*
+raw/
+*raw_diaries*
+*diary*text*
 *rosters*
-
-# python junk
+*participant_id*
+*identities*
+ 
+# Broad tabular sweep (safe aggregate files are force-added — see note at bottom)
+*.csv
+*.tsv
+ 
+# ─────────────────────────────────────────────────────────────
+# SECRETS / CREDENTIALS
+# ─────────────────────────────────────────────────────────────
+.env
+.env.*
+*.key
+*.pem
+secrets*
+*secret*
+config_local*
+credentials*
+*api_key*
+*token*
+ 
+# ─────────────────────────────────────────────────────────────
+# PYTHON
+# ─────────────────────────────────────────────────────────────
 __pycache__/
+*.py[cod]
 .ipynb_checkpoints/
-*.pyc
-venv/
 .venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+ 
+# ─────────────────────────────────────────────────────────────
+# NOTEBOOK / EDITOR / OS
+# ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ 
+# ─────────────────────────────────────────────────────────────
+# LARGE / INTERMEDIATE ARTIFACTS (optional — uncomment if needed)
+# ─────────────────────────────────────────────────────────────
+# *.html
+# *.pkl
+# *.parquet
+ 
+# ─────────────────────────────────────────────────────────────
+# NOTE: the aggregate result/figure files are .xlsx, so they are
+# NOT caught by the *.csv rule above and will commit normally.
+# If any safe file IS caught by a pattern here, force-add it:
+#     git add -f results/Table_2_expanded_correlations_common429.xlsx
+# ─────────────────────────────────────────────────────────────
+ 
