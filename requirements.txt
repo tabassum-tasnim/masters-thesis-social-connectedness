@@ -1,1 +1,27 @@
+# Core analysis stack for the thesis pipeline.
+# Versions are left unpinned for readability. To lock the exact
+# environment you ran, replace this file with the output of:
+#     pip freeze > requirements.txt
 
+# Data handling
+pandas
+numpy
+openpyxl            # read/write the .xlsx result files
+
+# Statistics / modelling
+scipy
+statsmodels         # mixed models (random intercepts), regression
+pingouin            # ICC, reliability, correlation helpers (optional)
+
+# Plotting
+matplotlib
+seaborn
+
+# Notebook environment
+jupyter
+ipykernel
+
+# Optional — include only if your code actually uses them:
+# scikit-learn       # any ML / validation utilities
+# tqdm               # progress bars
+# python-dotenv      # loading API keys from a .env file (keep .env gitignored!)
