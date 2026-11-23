@@ -23,6 +23,17 @@ The public notebook documents the final statistical analysis, model evaluation a
   * Neither baseline `PHQ-9` nor `GAD-7` was clearly associated with LLM-rated connectedness—whereas general BERT sentiment captured broader within- and between-person affective and symptom-level variance, and lexical-density indicators were sparser and less stable.
 
 
+## Interpretation and Limitations
+
+The results provide evidence that LLM-generated connectedness ratings are consistent and associated with momentary mood variation. However, several limitations are important:
+
+- **Construct validity:** High internal consistency, agreement with human judgments and repeated-run stability do not establish that the ratings uniquely measure social connectedness rather than related linguistic or affective characteristics.
+- **Human evaluation:** Validation involved a single human rater and 67 codable diary entries. Agreement estimates should therefore not be interpreted as evidence of reliability across multiple human annotators.
+- **Observational evidence:** Within-person associations with mood are correlational. They do not establish causal relationships or demonstrate that the measure can distinguish psychological states from stable individual characteristics.
+
+These limitations motivate further research involving independent human raters, stronger discriminant validation and longitudinal evaluation across participants and contexts.
+
+
 ## Results and Figures
 
 **Positive affect and LLM-rated social connectedness**
