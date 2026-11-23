@@ -14,7 +14,7 @@ This repository contains the statistical modeling notebooks, evaluation outputs,
 
 The public notebook documents the final statistical analysis, model evaluation and robustness checks performed for the thesis. The initial transcript-processing and LLM annotation workflows are not included in this release. The notebook begins from saved analytical checkpoints, while aggregate results and figures are available for inspection.
 
-### Key Methodology & Findings
+## Methods and Key Findings
 * **Intensive Longitudinal EMA Dataset:** Analyzed **429 naturalistic German audio-diary transcripts** from **40 university students** in the *PeerSmart Network Study* (a one-week smartphone ecological momentary assessment with momentary mood ratings and baseline `PHQ-9` depression and `GAD-7` anxiety scores).
 * **Structured LLM Instrument & Empirical Facet Selection:** Evaluated four dimensions of expressed social connectedness (*direct social connection*, *engagement with others*, *relationship quality*, and *belonging*) on a `0–4` scale using Azure OpenAI (`gpt-5-chat`). Excluded *belonging* on empirical grounds due to weaker inter-prompt correlations and a distinct distributional pattern, yielding a high-consistency **3-item composite ($\alpha = .976$)**.
 * **Human Validation & Repeated-Run Reliability:** Compared LLM-generated social-connectedness ratings with blinded coding by a single human rater across 67 codable diary entries (ICC(A,1) = .807). Assessed repeated-run consistency of the LLM ratings (Pearson r = .980). These findings provide evidence of agreement and stability but do not independently establish construct validity.
