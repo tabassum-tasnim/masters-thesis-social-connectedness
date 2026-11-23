@@ -1,12 +1,16 @@
-# data/ — restricted, NOT included in this repository
 
-The observation-level data for this thesis (German audio-diary text,
-participant identifiers, friendship rosters) are restricted under the
-study's ethics approval and GDPR and are not distributed here.
+# Restricted Research Data
 
-This folder is intentionally empty in the repository and is excluded
-via .gitignore. To reproduce the analysis, place the restricted data
-files here using the filenames expected by the scripts in ../code/.
+The original participant-level data used in this master's thesis are not publicly available due to research ethics and GDPR restrictions.
 
-Access may be possible for legitimate research purposes, subject to
-approval. Contact the author.
+The final analysis notebook expects an untracked directory named `Data Sharing/` at the repository root.
+
+This directory contains restricted analysis checkpoints, including participant-level measurements and model-generated annotations.
+
+The original data cannot be distributed with this repository.
+
+The public repository provides analysis code, aggregate statistical results and figures for research transparency.
+
+The full notebook cannot be executed without access to the approved private checkpoints.
+
+Access to restricted data requires appropriate authorization from the study's data controllers.
