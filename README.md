@@ -22,6 +22,8 @@ The public notebook documents the final statistical analysis, model evaluation a
   * Neither baseline `PHQ-9` nor `GAD-7` was clearly associated with LLM-rated connectedness—whereas general BERT sentiment captured broader within- and between-person affective and symptom-level variance, and lexical-density indicators were sparser and less stable.
 
 
+For detailed model specifications, analytical decisions and an overview of the three model families, see the [Statistical Analysis Strategy](docs/analysis_strategy.md).
+
 ## Interpretation and Limitations
 
 The results provide evidence that LLM-generated connectedness ratings are consistent and associated with momentary mood variation. However, several limitations are important:
