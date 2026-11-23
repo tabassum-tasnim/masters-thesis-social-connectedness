@@ -54,6 +54,12 @@ Thumbs.db
 # *.html
 # *.pkl
 # *.parquet
+
+# Restricted research data and analysis checkpoints
+Data Sharing/
+*.parquet
+*.feather
+*.pickle
  
 # ─────────────────────────────────────────────────────────────
 # NOTE: the aggregate result/figure files are .xlsx, so they are
