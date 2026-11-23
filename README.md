@@ -64,12 +64,20 @@ Due to participant privacy and GDPR data-protection regulations governing audio-
 ## Setup & Reproducibility
 
 ```bash
-git clone [https://github.com/tabassum-tasnim/masters-thesis-social-connectedness.git](https://github.com/tabassum-tasnim/masters-thesis-social-connectedness.git)
-cd masters-thesis-social-connectedness
-pip install -r requirements.txt
-jupyter notebook "code/Data_Analysis_&_Exploration.ipynb"
-```
 
+git clone https://github.com/tabassum-tasnim/masters-thesis-social-connectedness.git
+cd masters-thesis-social-connectedness
+
+python -m venv .venv
+source .venv/bin/activate
+# On Windows: .venv\Scripts\activate
+
+pip install -r requirements.txt
+
+jupyter notebook "code/Data_Analysis_&_Exploration.ipynb"
+
+```
+**Reproducibility note:** The public notebook begins from restricted analytical checkpoints generated during the original research workflow. These checkpoints are not distributed with the repository. Consequently, the complete analysis cannot be rerun using public files alone. Aggregate results and figures are provided for inspection.
 ---
 
 ## Citation
