@@ -6,7 +6,8 @@
 # Data handling
 pandas
 numpy
-openpyxl            # read/write the .xlsx result files
+openpyxl           
+pyarrow
 
 # Statistics / modelling
 scipy
