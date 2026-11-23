@@ -91,23 +91,50 @@ All data are generated with a fixed random seed.
 
 **Important:** This is a methodological illustration only. The simulated observations, coefficients and results are not derived from the original thesis dataset. The example does not validate the LLM measurement instrument or reproduce the original empirical findings.
 
-## Setup & Reproducibility
+
+## Environment Setup and Reproducibility
+
+Clone the repository and install the dependencies:
 
 ```bash
-
 git clone https://github.com/tabassum-tasnim/masters-thesis-social-connectedness.git
 cd masters-thesis-social-connectedness
 
 python -m venv .venv
+
+# Linux/macOS
 source .venv/bin/activate
-# On Windows: .venv\Scripts\activate
+
+# Windows
+# .venv\Scripts\activate
 
 pip install -r requirements.txt
-
-jupyter notebook "code/Data_Analysis_&_Exploration.ipynb"
-
 ```
-**Reproducibility note:** The public notebook begins from restricted analytical checkpoints generated during the original research workflow. These checkpoints are not distributed with the repository. Consequently, the complete analysis cannot be rerun using public files alone. Aggregate results and figures are provided for inspection.
+
+**Publicly reproducible example**
+
+Run the synthetic longitudinal analysis:
+
+```bash
+python examples/synthetic_longitudinal_demo.py
+```
+
+This example is self-contained and does not require access to the original research data.
+
+**Original thesis analysis**
+
+The original statistical notebook is located at:
+
+`code/Data_Analysis_&_Exploration.ipynb`
+
+It requires restricted analytical checkpoints, including participant-level observations, survey measures and LLM-generated ratings.
+
+The notebook expects these checkpoints inside a local `Data Sharing/` directory.
+
+These files are not publicly distributed because of research ethics and data-protection restrictions.
+
+The original analysis therefore cannot be reproduced from the public repository alone. Aggregate statistical results and figures remain available for inspection.
+
 
 ## Citation
 
