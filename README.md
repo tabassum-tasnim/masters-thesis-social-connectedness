@@ -1,10 +1,12 @@
-# Language-Based Indicators of Social Relationship Perception in Depression and Anxiety
 
-**A Computational Social Science Approach Using NLP**  
-*M.Sc. Thesis in Computational Social Systems (Social Data Science), RWTH Aachen University (2026)*  
-**Author:** Tasnim Tabassum | [Portfolio](https://tabassum-tasnim.github.io/) | [Google Scholar](https://scholar.google.com/citations?hl=en&user=iG6eCN8AAAAJ) | [LinkedIn](https://www.linkedin.com/in/towmony)
+# Social Connectedness in Naturalistic Language
 
----
+*Master's Thesis · M.Sc. Computational Social Systems · RWTH Aachen University · 2026*
+
+**Full thesis title:** Language-Based Indicators of Social Relationship Perception in Depression and Anxiety: A Computational Social Science Approach Using NLP
+
+**Tasnim Tabassum** · [Portfolio](https://tabassum-tasnim.github.io/) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=iG6eCN8AAAAJ) · [LinkedIn](https://www.linkedin.com/in/towmony)
+
 
 ## Overview
 
@@ -20,23 +22,25 @@ The public notebook documents the final statistical analysis, model evaluation a
   * Higher-than-usual **within-person positive mood** predicted higher LLM-rated social connectedness (**$b = 0.228, p < .001$**), while higher **within-person negative mood** predicted lower ratings in separate models (**$b = -0.186, p < .001$**).
   * Neither baseline `PHQ-9` nor `GAD-7` was clearly associated with LLM-rated connectedness—whereas general BERT sentiment captured broader within- and between-person affective and symptom-level variance, and lexical-density indicators were sparser and less stable.
 
----
 
-## Key Results & Visualizations
+## Results and Figures
 
-### Within-Person Association: Social Connectedness & Positive Affect (`PA`)
-![Within-person positive affect and LLM-measured social connectedness](figures/Figure_PA_within_friends_LLM_common429.png)
+**Positive affect and LLM-rated social connectedness**
 
-### Within-Person Association: Social Connectedness & Negative Affect (`NA`)
-![Within-person negative affect and LLM-measured social connectedness](figures/Figure_NA_within_friends_LLM_common429.png)
+![Positive affect and social connectedness](figures/Figure_PA_within_friends_LLM_common429.png)
 
----
+**Negative affect and LLM-rated social connectedness**
+
+![Negative affect and social connectedness](figures/Figure_NA_within_friends_LLM_common429.png)
+
 
 ## Repository Structure
 
 ```text
 ├── code/
-│   └── Data_Analysis_&_Exploration.ipynb        # Data preparation, reliability checks & REWB mixed-effects models
+│   └── Data_Analysis_&_Exploration.ipynb   # Final statistical analyses, audits and robustness checks
+├── examples/
+│   └── synthetic_longitudinal_demo.py      # Reproducible demonstration using artificial data
 ├── data/
 │   └── README.md                                # Data governance, anonymization & GDPR access restrictions
 ├── figures/
@@ -55,13 +59,9 @@ The public notebook documents the final statistical analysis, model evaluation a
 └── LICENSE
 ```
 
----
-
 ## Data Availability & Privacy
 
 Due to participant privacy and GDPR data-protection regulations governing audio-diary transcripts from the *PeerSmart Network Study*, raw text transcripts cannot be shared publicly. See [`data/README.md`](data/README.md) for dataset schema details, and refer to `figures/` and `results/` for aggregated model predictions and regression tables.
-
----
 
 ## Reproducible Synthetic Demonstration
 
@@ -108,7 +108,6 @@ jupyter notebook "code/Data_Analysis_&_Exploration.ipynb"
 
 ```
 **Reproducibility note:** The public notebook begins from restricted analytical checkpoints generated during the original research workflow. These checkpoints are not distributed with the repository. Consequently, the complete analysis cannot be rerun using public files alone. Aggregate results and figures are provided for inspection.
----
 
 ## Citation
 
