@@ -63,6 +63,34 @@ Due to participant privacy and GDPR data-protection regulations governing audio-
 
 ---
 
+## Reproducible Synthetic Demonstration
+
+A standalone example is available in
+[`examples/synthetic_longitudinal_demo.py`](examples/synthetic_longitudinal_demo.py).
+
+It demonstrates within-person and between-person decomposition using a random-intercept linear mixed-effects model.
+
+The script generates 480 artificial observations from 40 simulated participants. It separates each participant's mean mood from momentary deviations around that mean and estimates their associations with a simulated connectedness outcome.
+
+### Run the demonstration
+
+From the repository root, after installing the dependencies in `requirements.txt`, run:
+
+```bash
+python examples/synthetic_longitudinal_demo.py
+```
+
+### Expected output
+
+The script prints the sample size and a `statsmodels` mixed-effects regression summary, including coefficients for:
+
+- `mood_within`: within-person association
+- `mood_between`: between-person association
+
+All data are generated with a fixed random seed.
+
+**Important:** This is a methodological illustration only. The simulated observations, coefficients and results are not derived from the original thesis dataset. The example does not validate the LLM measurement instrument or reproduce the original empirical findings.
+
 ## Setup & Reproducibility
 
 ```bash
