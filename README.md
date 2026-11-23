@@ -74,7 +74,7 @@ The script generates 480 artificial observations from 40 simulated participants.
 
 ### Run the demonstration
 
-From the repository root, after installing the dependencies in `requirements.txt`, run:
+From the repository root, after installing the dependencies in `requirements-demo.txt`, run:
 
 ```bash
 python examples/synthetic_longitudinal_demo.py
@@ -108,7 +108,7 @@ source .venv/bin/activate
 # Windows
 # .venv\Scripts\activate
 
-pip install -r requirements.txt
+pip install -r requirements-demo.txt
 ```
 
 **Publicly reproducible example**
