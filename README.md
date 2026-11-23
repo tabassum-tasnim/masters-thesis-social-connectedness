@@ -1,4 +1,3 @@
-
 # Social Connectedness in Naturalistic Language
 
 *Master's Thesis · M.Sc. Computational Social Systems · RWTH Aachen University · 2026*
@@ -48,27 +47,23 @@ These limitations motivate further research involving independent human raters, 
 ## Repository Structure
 
 ```text
+.
 ├── code/
-│   └── Data_Analysis_&_Exploration.ipynb   # Final statistical analyses, audits and robustness checks
+│   └── Data_Analysis_&_Exploration.ipynb
 ├── examples/
-│   └── synthetic_longitudinal_demo.py      # Reproducible demonstration using artificial data
+│   └── synthetic_longitudinal_demo.py
 ├── data/
-│   └── README.md                                # Data governance, anonymization & GDPR access restrictions
-├── figures/
-│   ├── Figure_PA_within_friends_LLM_common429.png
-│   ├── Figure_PA_within_friends_LLM_prediction_data.xlsx
-│   ├── Figure_NA_within_friends_LLM_common429.png
-│   └── Figure_NA_within_friends_LLM_prediction_data.xlsx
-├── results/
-│   ├── Family1_separate_mood_models_full_common429.xlsx
-│   ├── Family2_mixed_models_common429.xlsx
-│   ├── Family3_joint_PHQ_GAD_common429.xlsx
-│   ├── Family3_separate_models_full_common429.xlsx
-│   ├── Table_2_expanded_correlations_common429.xlsx
-│   └── Table_5_Family3_separate_PHQ_GAD_common429.xlsx
-├── requirements.txt
+│   └── README.md
+├── figures/                       # Aggregate visualizations
+├── results/                       # Statistical result tables
+├── .github/workflows/
+│   └── synthetic-demo.yml         # Automated reproducibility test
+├── requirements-demo.txt          # Tested synthetic-demo dependencies
+├── requirements.txt               # Broader thesis dependencies
 └── LICENSE
 ```
+
+The original analysis notebook requires restricted data. The synthetic example runs independently using the dependencies in `requirements-demo.txt`.
 
 ## Data Availability & Privacy
 
